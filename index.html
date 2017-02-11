@@ -17,7 +17,7 @@
       }
 
       a:hover, a:focus {
-        color: rgb(233,43,17)
+        color: rgb(233,43,17);
       }
 
       h1, h2, h3 {
@@ -34,33 +34,87 @@
         list-style: none;
         padding-left: 0;
       }
+
+      .about {
+        background-color: rgb(231,196,196);
+      }
+
+      .about__content {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 650px;
+        padding: 80px 20px;
+        text-align: center;
+      }
+
+      .about__title {
+        font-size: 26px;
+        font-weight: bold;
+      }
+
+      .about__byline {
+        font-style: italic;
+      }
+
+      .about__description {
+        margin-top: 20px;
+      }
+
+      .about__description--first {
+        margin-top: 40px;
+      }
+
+      .about__button {
+        border: 1px solid rgb(50,50,50);
+        display: inline-block;
+        padding: 15px 20px;
+        text-decoration: none;
+      }
+
+      .about__button:hover, .about__button:focus {
+        border-color: rgb(233,43,17);
+      }
+
+      @media (min-width: 500px) {
+        .about {
+          padding-bottom: 150px;
+          padding-top: 150px;
+        }
+      }
     </style>
   </head>
 
   <body>
-    <section>
-      <h1>
-        Yasmine Awwad
-      </h1>
+    <section class="about">
+      <div class="about__content">
+        <h1 class="about__title">
+          Yasmine Awwad
+        </h1>
 
-      <h2>
-        Editor, writer &amp; blogger
-      </h2>
+        <h2 class="about__byline">
+          Editor, writer &amp; blogger
+        </h2>
 
-      <p>
-        I’m a freelance editor, writer and blogger. I used to live in London,
-        where I was a managing production editor for a science publishing
-        company. These days I’m travelling the world and working freelance.
-        Over the last three years I’ve worked on a variety of freelance
-        projects, copyediting and writing for travel websites, science journals,
-        fashion companies and universities.
-      </p>
+        <p class="about__description about__description--first">
+          I’m a freelance editor, writer and blogger. I used to live in London,
+          where I was a managing production editor for a science publishing
+          company. These days I’m travelling the world and working freelance.
+          Over the last three years I’ve worked on a variety of freelance
+          projects, copyediting and writing for travel websites, science journals,
+          fashion companies and universities.
+        </p>
 
-      <p>
-        If you’d like to discuss your upcoming project, I’d love to hear from
-        you:
-        <a href="mailto:hello@yasmineawwad.co.uk">hello@yasmineawwad.co.uk</a>
-      </p>
+        <p class="about__description">
+          If you’d like to discuss your upcoming project, I’d love to hear from
+          you.
+        </p>
+
+        <p class="about__description">
+          <a class="about__button" href="mailto:hello@yasmineawwad.co.uk">
+            hello@yasmineawwad.co.uk
+          </a>
+        </p>
+      </div>
     </section>
 
     <section>
@@ -100,7 +154,7 @@
           </h3>
           <p>
             Editing, layout and illustration for a monthly medical journal,
-            Cell and Gene Therapy Insights.
+            <em>Cell and Gene Therapy Insights</em>.
           <p>
         </li>
 
