@@ -113,10 +113,38 @@
       }
 
       @media (min-width: 500px) {
-        .about, .projects {
+        .about, .projects, .writing {
           padding-bottom: 200px;
           padding-top: 200px;
         }
+      }
+
+      .writing {
+        background-color: rgb(54,77,83);
+        color: rgb(255,255,255);
+      }
+
+      .writing__content {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 650px;
+      }
+
+      .writing__title {
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      .writing__item {
+        margin-top: 20px;
+      }
+
+      .writing__item:first-child {
+        margin-top: 40px;
+      }
+
+      .writing__link {
+        color: rgb(255,255,255);
       }
     </style>
   </head>
@@ -233,86 +261,88 @@
       </div>
     </section>
 
-    <section>
-      <h2>
-        Travel writing
-      </h2>
+    <section class="writing">
+      <div class="writing__content">
+        <h2 class="writing__title">
+          Travel writing
+        </h2>
 
-      <ul>
-        <li>
-          <h3>
-            Lonely Planet
-          </h3>
+        <ul>
+          <li class="writing__item">
+            <h3>
+              Lonely Planet
+            </h3>
 
-          <ul>
-            <li>
-              <a href="http://www.lonelyplanet.com/blog/2017/01/13/pathfinder-pics-road-tripping-in-slovenia">
-                Road tripping in Slovenia
+            <ul>
+              <li>
+                <a class="writing__link" href="http://www.lonelyplanet.com/blog/2017/01/13/pathfinder-pics-road-tripping-in-slovenia">
+                  Road tripping in Slovenia
+                </a>
+              </li>
+
+              <li>
+                <a class="writing__link" href="http://www.lonelyplanet.com/blog/2016/02/12/pathfinder-pics-havana-cuba">
+                  Havana, Cuba
+                </a>
+              </li>
+
+              <li>
+                <a class="writing__link" href="http://www.lonelyplanet.com/blog/2016/02/04/pathfinder-pics-valle-de-vinales-cuba">
+                  Valle de Viñales, Cuba
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="writing__item">
+            <h3>
+              Culture Stories
+            </h3>
+
+            <p>
+              <a class="writing__link" href="https://culturestories.co/mexico-city-book-lovers">
+                Mexico is for book lovers
               </a>
-            </li>
+            </p>
+          </li>
 
-            <li>
-              <a href="http://www.lonelyplanet.com/blog/2016/02/12/pathfinder-pics-havana-cuba">
-                Havana, Cuba
+          <li class="writing__item">
+            <h3>
+              The Culture Trip
+            </h3>
+
+            <p>
+              <a class="writing__link" href="https://theculturetrip.com/asia/japan/articles/japanese-sumo-wrestling-everything-you-need-to-know">
+                Japanese sumo wrestling: everything you need to know
               </a>
-            </li>
+            </p>
+          </li>
 
-            <li>
-              <a href="http://www.lonelyplanet.com/blog/2016/02/04/pathfinder-pics-valle-de-vinales-cuba">
-                Valle de Viñales, Cuba
+          <li class="writing__item">
+            <h3>
+              Roads &amp; Kingdoms
+            </h3>
+
+            <p>
+              <a class="writing__link" href="http://roadsandkingdoms.com/breakfast/how-do-you-eat-chicken-wings-with-chopsticks">
+                How do you eat chicken wings with chopsticks?
               </a>
-            </li>
-          </ul>
-        </li>
+            </p>
+          </li>
 
-        <li>
-          <h3>
-            Culture Stories
-          </h3>
+          <li class="writing__item">
+            <h3>
+              The Travelettes
+            </h3>
 
-          <p>
-            <a href="https://culturestories.co/mexico-city-book-lovers">
-              Mexico is for book lovers
-            </a>
-          </p>
-        </li>
-
-        <li>
-          <h3>
-            The Culture Trip
-          </h3>
-
-          <p>
-            <a href="https://theculturetrip.com/asia/japan/articles/japanese-sumo-wrestling-everything-you-need-to-know">
-              Japanese sumo wrestling: everything you need to know
-            </a>
-          </p>
-        </li>
-
-        <li>
-          <h3>
-            Roads &amp; Kingdoms
-          </h3>
-
-          <p>
-            <a href="http://roadsandkingdoms.com/breakfast/how-do-you-eat-chicken-wings-with-chopsticks">
-              How do you eat chicken wings with chopsticks?
-            </a>
-          </p>
-        </li>
-
-        <li>
-          <h3>
-            The Travelettes
-          </h3>
-
-          <p>
-            <a href="http://www.travelettes.net/48-hours-on-the-japanese-art-islands">
-              48 hours in the Japanese Art Islands
-            </a>
-          </p>
-        </li>
-      </ul>
+            <p>
+              <a class="writing__link" href="http://www.travelettes.net/48-hours-on-the-japanese-art-islands">
+                48 hours in the Japanese Art Islands
+              </a>
+            </p>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section>
