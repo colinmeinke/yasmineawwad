@@ -38,7 +38,7 @@
         padding-left: 0;
       }
 
-      .about, .projects {
+      .about, .projects, .writing, .blog, .contact {
         padding: 80px 20px;
       }
 
@@ -89,13 +89,13 @@
         color: rgb(255,255,255);
       }
 
-      .projects__content {
+      .projects__content, .writing__content, .blog__content, .contact__content {
         margin-left: auto;
         margin-right: auto;
         max-width: 650px;
       }
 
-      .projects__title {
+      .projects__title, .writing__title, .blog__title, .contact__title {
         font-weight: bold;
         text-transform: uppercase;
       }
@@ -112,27 +112,9 @@
         color: rgb(255,255,255);
       }
 
-      @media (min-width: 500px) {
-        .about, .projects, .writing {
-          padding-bottom: 200px;
-          padding-top: 200px;
-        }
-      }
-
       .writing {
         background-color: rgb(54,77,83);
         color: rgb(255,255,255);
-      }
-
-      .writing__content {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 650px;
-      }
-
-      .writing__title {
-        font-weight: bold;
-        text-transform: uppercase;
       }
 
       .writing__item {
@@ -145,6 +127,33 @@
 
       .writing__link {
         color: rgb(255,255,255);
+      }
+
+      .blog {
+        background-color: rgb(106, 208, 165);
+      }
+
+      .blog__subtitle {
+        margin-top: 40px;
+      }
+
+      .blog__description {
+        margin-top: 20px;
+      }
+
+      .contact {
+        background-color: rgb(252,251,227);
+      }
+
+      .contact__content {
+        text-align: center;
+      }
+
+      @media (min-width: 500px) {
+        .about, .projects, .writing, .blog, .contact {
+          padding-bottom: 150px;
+          padding-top: 150px;
+        }
       }
     </style>
   </head>
@@ -345,50 +354,54 @@
       </div>
     </section>
 
-    <section>
-      <h2>
-        Blogging
-      </h2>
+    <section class="blog">
+      <div class="blog__content">
+        <h2 class="blog__title">
+          Blogging
+        </h2>
 
-      <h3>
-        <a href="http://peekingduck.co">Peeking Duck</a>
-      </h3>
+        <h3 class="blog__subtitle">
+          <a href="http://peekingduck.co">Peeking Duck</a>
+        </h3>
 
-      <p>
-        I’ve been travelling for 3 years and have visited 45 countries
-        (my favourites: Japan and Mexico). I love sharing stories, photos and
-        travel tips on my blog, Peeking Duck, which has 10,000 monthly
-        readers. I’m also a featured
-        <a href="http://www.lonelyplanet.com/pathfinders">Lonely Planet Pathfinder</a>.
-      </p>
+        <p class="blog__description">
+          I’ve been travelling for 3 years and have visited 45 countries
+          (my favourites: Japan and Mexico). I love sharing stories, photos and
+          travel tips on my blog, Peeking Duck, which has 10,000 monthly
+          readers. I’m also a featured
+          <a href="http://www.lonelyplanet.com/pathfinders">Lonely Planet Pathfinder</a>.
+        </p>
 
-      <p>
-        <a href="peeking-duck-media-kit.pdf">Download my blog media kit</a>.
-      </p>
+        <p class="blog__description">
+          <a href="peeking-duck-media-kit.pdf">Download my blog media kit</a>.
+        </p>
+      </div>
     </section>
 
-    <section>
-      <h3>
-        Get in touch
-      </h3>
+    <section class="contact">
+      <div class="contact__content">
+        <h3 class="contact__title">
+          Get in touch
+        </h3>
 
-      <ul>
-        <li>
-          <a href="mailto:hello@yasmineawwad.co.uk">Email</a>
-        </li>
+        <ul>
+          <li>
+            <a href="mailto:hello@yasmineawwad.co.uk">Email</a>
+          </li>
 
-        <li>
-          <a href="https://www.linkedin.com/in/yasmineawwad">Linkedin</a>
-        </li>
+          <li>
+            <a href="https://www.linkedin.com/in/yasmineawwad">Linkedin</a>
+          </li>
 
-        <li>
-          <a href="https://www.instagram.com/peekingduckco">Instagram</a>
-        </li>
+          <li>
+            <a href="https://www.instagram.com/peekingduckco">Instagram</a>
+          </li>
 
-        <li>
-          <a href="https://twitter.com/peekingduckco">Twitter</a>
-        </li>
-      <ul>
+          <li>
+            <a href="https://twitter.com/peekingduckco">Twitter</a>
+          </li>
+        <ul>
+      </div>
     </section>
   </body>
 </html>
